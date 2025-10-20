@@ -1,4 +1,97 @@
-// @import "@fontsource/manrope";
-// @use "node_modules/@fontsource/manrope/index.css";
-// @use "node_modules/@fontsource/manrope/500.css"
+// Scss Variables
+$blackColor: #000000;
+$whiteColor: #FFFFFF;
+$whiteBg: #F7F9FA;
+$darkGray: #606060;
+$lightGray: #E6E6E6;
+$offWhite: #D5D5D5;
+$crunchYellow: #F2FBC2;
+$lightYellow: #FBE9C2;
+$skyBlue: #C2F2FB;
+$lightPink: #E7C2FB;
+$lightGreen: #C2FBD1;
+$lightPurple: #D6DEFF;
+$lightOrange: #FFE0D6;
+$skinPink: #FFD6E4;
 
+// Font Sizes
+$text32: 2rem;
+$text18: 1.1rem;
+$text22: 1.37rem;
+
+// Paddings 
+$btn-paddings-lg: 20px 32px 22px;
+$btn-paddings-sm: 16px 24px 18px;
+
+// Mixins
+@mixin gray-pill {
+  background-color: $lightGray;
+  border-radius: 50px;
+  color: $blackColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin white-btn {
+  border: 1px solid $blackColor;
+  color: $blackColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  position: relative;
+}
+
+// Header Section - Top Right Image
+header img {
+  width: 60vw;
+  height: 390px;
+}
+
+// Gray Button
+.gray-pill {
+  @include gray-pill;
+  font-size: $text22;
+  padding: $btn-paddings-sm;
+}
+
+// White Button
+.white-btn {
+  @include white-btn;
+  font-size: $text22;
+  padding: $btn-paddings-sm;
+  background-color: $whiteBg;
+
+  &:hover {
+    background-color: $blackColor;
+    color: $whiteColor;
+  }
+}
+
+// --->>DESKTOP TABLET VIEW <<----
+@media screen and (min-width: 768px) {
+  .gray-pill {
+    @include gray-pill;
+    font-size: $text32;
+    padding: $btn-paddings-lg;
+  }
+
+  .white-btn {
+    @include white-btn;
+    font-size: $text32;
+    padding: $btn-paddings-lg;
+    background-color: $whiteBg;
+
+    &:hover {
+      background-color: $blackColor;
+      color: $whiteColor;
+    }
+  }
+
+  // Header Section Top Right Image
+  header img {
+    width: 50vw;
+    height: 490px;
+  }
+}

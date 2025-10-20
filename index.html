@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Carter - Design Brandings</title>
   <!-- Bootstrap NPM -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <!-- JavaScript NPM -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <!-- Stylesheet link Css -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-  
-</header>
+
+  <!-- Header Section -->
+  <header>
+    <!-- Header Section - Top Right relative image -->
+    <img src="assets/images/pizza.png" class="position-absolute top-0 end-0" alt="pizza img">
+
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand gray-pill border-0" href="#">Alex Carter</a>
+        <button class="navbar-toggler white-btn" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar">
+          Menu
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item me-3">
+              <a class="nav-link white-btn" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link white-btn" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 </body>
 </html>
