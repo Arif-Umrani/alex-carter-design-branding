@@ -7,31 +7,31 @@
   <title>Alex Carter - Design Brandings</title>
   <!-- Bootstrap NPM -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-  <!-- JavaScript NPM -->
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <!-- Stylesheet link Css -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  
   <!-- Header Section -->
   <header>
-    <!-- Header Section - Top Right relative image -->
+    
+    <!-- Header Section - Top Right Image -->
     <img src="assets/images/pizza.png" class="position-absolute top-0 end-0" alt="pizza img">
-
+    
     <!-- Nav-bar -->
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid">
         <a class="navbar-brand gray-pill border-0" href="#">Alex Carter</a>
         <button class="navbar-toggler white-btn" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar">
-          Menu
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item me-3">
-              <a class="nav-link white-btn" href="#">Work</a>
+        data-bs-target="#collapsibleNavbar">
+        Menu
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="toggle-down-right justify-content-md-start">
+          <ul class="navbar-nav w-50">
+            <li class="nav-item">
+              <a class="nav-link white-btn mb-2 me-md-4 me-sm-0" href="#">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link white-btn" href="#">About</a>
@@ -39,7 +39,37 @@
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
+
+<!-- About Section -->
+<section class="about-section">
+  <div class="container">
+    <p>
+      I'm Alex Carter. I wrestle brands into submission and make them do cool stuff.
+      My resume includes stints at places you've heard of (and maybe even used).
+      Now freelancing in NYC, where the pizza is good, but the bacon is better.
+      Want to make some visual magic?
+    </p>
+  </div>
+</section>
+
+<!-- Focus Section -->
+<section class="focus-section">
+  <div class="container">
+    <button class="gray-pill mb-5">Focus</button>
+    <u class="list-unstyled text-decoration-none">
+      <li>
+        - Visual Identity
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- JavaScript NPM -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

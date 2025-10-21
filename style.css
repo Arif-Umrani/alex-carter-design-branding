@@ -2,9 +2,19 @@ body {
   position: relative;
 }
 
+header {
+  padding-bottom: 220px;
+}
+
 header img {
   width: 60vw;
   height: 390px;
+  z-index: -100;
+}
+
+.toggle-down-right {
+  display: flex;
+  justify-content: end;
 }
 
 .gray-pill {
@@ -31,6 +41,14 @@ header img {
   color: #FFFFFF;
 }
 
+.about-section {
+  background-color: rgba(255, 255, 255, 0.7019607843);
+  opacity: -100px;
+}
+.about-section p {
+  font-size: 1.37rem;
+}
+
 @media screen and (min-width: 768px) {
   .gray-pill {
     background-color: #E6E6E6;
@@ -54,8 +72,18 @@ header img {
     background-color: #000000;
     color: #FFFFFF;
   }
+  header {
+    padding-bottom: 130px;
+  }
   header img {
     width: 50vw;
     height: 490px;
+  }
+  .about-section {
+    background-color: rgba(255, 255, 255, 0.7019607843);
+    opacity: -100px;
+  }
+  .text-22 {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

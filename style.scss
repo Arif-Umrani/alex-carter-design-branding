@@ -13,6 +13,7 @@ $lightGreen: #C2FBD1;
 $lightPurple: #D6DEFF;
 $lightOrange: #FFE0D6;
 $skinPink: #FFD6E4;
+$transparentBg: #FFFFFFB3;
 
 // Font Sizes
 $text32: 2rem;
@@ -22,6 +23,9 @@ $text22: 1.37rem;
 // Paddings 
 $btn-paddings-lg: 20px 32px 22px;
 $btn-paddings-sm: 16px 24px 18px;
+$pbBottom-220: 220px;
+$pbBottom-130: 130px;
+
 
 // Mixins
 @mixin gray-pill {
@@ -43,10 +47,22 @@ body {
   position: relative;
 }
 
+// Header 
+header {
+  padding-bottom: $pbBottom-220;
+}
+
 // Header Section - Top Right Image
 header img {
   width: 60vw;
   height: 390px;
+  z-index: -100;
+}
+
+// Button toggle-down set to right
+.toggle-down-right {
+  display: flex;
+  justify-content: end;
 }
 
 // Gray Button
@@ -69,6 +85,18 @@ header img {
   }
 }
 
+// About Section
+.about-section {
+  background-color: $transparentBg;
+  opacity: -100px;
+  p {
+    font-size: $text22;
+  }
+}
+
+
+
+
 // --->>DESKTOP TABLET VIEW <<----
 @media screen and (min-width: 768px) {
   .gray-pill {
@@ -89,9 +117,27 @@ header img {
     }
   }
 
+  // Header 
+  header {
+    padding-bottom: $pbBottom-130;
+  }
+
   // Header Section Top Right Image
   header img {
     width: 50vw;
     height: 490px;
   }
+
+  // About Section
+  .about-section {
+    background-color: $transparentBg;
+    opacity: -100px;
+  }
+
+  .text-22 {
+    font-size: $text32;
+  }
+
+  // Focus Section
+
 }
